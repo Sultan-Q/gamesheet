@@ -44,10 +44,10 @@ function showList() {
   var html = "<ul>";
   for (var i = 0; i < todos.length; i++) {
     html +=
-      '<img src="' +
+      '<li class="list"><img src="' +
       todos[i].photo_url +
-      '" alt="Girl in a jacket" width="50" height="50" style="border-radius: 15px;">';
-    '<li class="list">' +
+      '" alt="Girl in a jacket" width="40" height="40" style="border-radius: 15px;">' +
+      "  " +
       todos[i].name +
       '<span class="close" id="' +
       i +
