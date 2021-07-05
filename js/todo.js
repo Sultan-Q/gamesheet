@@ -77,7 +77,7 @@ async function newTask() {
     alert("You haven't added anything");
   } else {
     let response = await fetch(
-      "http://localhost:3000/game/getSpeakers?url=" + inputValue
+      "https://chbot100.herokuapp.com/game/getSpeakers?url=" + inputValue
     );
     let data = await response.json();
     console.log(data);
