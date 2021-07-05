@@ -37,14 +37,17 @@ function removeAll() {
   return false;
 }
 
-// Create a new list item when clicking on the "Add" button
+//photo_url Create a new list item when clicking on the "Add" button
 function showList() {
   var todos = get_todos();
 
   var html = "<ul>";
   for (var i = 0; i < todos.length; i++) {
     html +=
-      '<li class="list">' +
+      '<img src="' +
+      todos[i].photo_url +
+      '" alt="Girl in a jacket" width="50" height="50" style="border-radius: 15px;">';
+    '<li class="list">' +
       todos[i].name +
       '<span class="close" id="' +
       i +
