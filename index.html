@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/todo.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="col-md-6 col-md-offset-3">
+      <div id="myDIV" class="header">
+        <h2 class="title">Be Yourself - Game Sheet</h2>
+
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="ClubHouse Room URL"
+          class="form-control"
+        />
+        <br />
+
+        <br />
+        <br />
+        <span onclick="newTask()" class="btn btn-primary"
+          >Get All Speakers</span
+        >
+        <span onclick="removeAll()" class="btn btn-primary">Remove All</span>
+      </div>
+      <ul id="uList"></ul>
+    </div>
+  </body>
+</html>
